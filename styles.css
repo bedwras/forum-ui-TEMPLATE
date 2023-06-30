@@ -1,0 +1,448 @@
+* {
+    font-family: sans-serif;
+}
+
+/*-------------------*\
+
+        TEXT
+
+\*-------------------*/
+
+h1, h2, h3, h4, h5, h6, p, code, hr {
+    color: white;
+    margin: 10px;
+}
+
+.left-bold {
+    text-align: left;
+    font-weight: 800;
+}
+
+a, a:hover, a:active {
+    text-decoration: none;
+}
+
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+
+.link {
+    padding: 2px;
+    color: rgb(15, 119, 238);
+    text-decoration: none;
+}
+
+.link:hover {
+    transition-duration: 300ms;
+    background-color: rgba(98, 98, 98, 0.645);  
+}
+
+.link:active {
+    background-color: rgba(98, 98, 98, 0.734);
+    transition-duration: 0.2s;
+    border-radius: 2px;
+}
+
+.link:visited {
+    color: rgb(15, 119, 238);
+}
+
+/*-------------------*\
+
+        MAIN PAGE
+
+\*-------------------*/
+
+body {
+    background-color: black;
+}
+
+.main {
+}
+
+div {
+    margin: 0;
+}
+
+.title-container {
+    position: sticky;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.532);
+    top: 0px;
+    backdrop-filter: blur(5px);
+}
+
+.container-wrapper {
+    position: sticky;
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1001;
+    background-color: rgba(0, 0, 0, 0.532);
+    top: 0px;
+    filter: blur(90%);
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.post {
+    position: relative;
+    border-bottom: 2px solid rgb(68, 68, 68);
+    border-right: 2px solid rgb(68, 68, 68);
+    border-left: 2px solid rgb(68, 68, 68);
+    max-width: 100%;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+}
+
+.post:hover {
+    background-color: rgb(13, 13, 13);
+    transition-duration: 320ms;
+    cursor: pointer;
+}
+
+
+.post:active {
+    background-color: rgb(37, 37, 37);
+    transition-duration: 320ms;
+}
+
+.write-post { /*This is the div that contains .write */
+    border: 2px solid rgb(68, 68, 68);
+    max-width: 100%;
+    width: 800px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(22, 21, 21);
+    position: relative;
+}
+
+.write {
+    background-color: rgb(22, 21, 21);
+    height: auto;
+    width: 800px;
+    resize: none;
+    border: 1px solid rgb(22, 21, 21);
+    color:  white;
+    text-align: left;
+    margin: auto;
+    max-width: 100%;
+    width: auto;
+    padding: 20px;
+    outline: none;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+    position: sticky;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 300px;
+    top: 0px;
+    left: 0px;
+    width: 330px;
+    height: 100%;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    overflow: scroll;
+    z-index: 999;
+  }
+
+  .nav-link {
+    list-style: none;
+  }
+
+  .nav-li{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    align-self: center;
+    border: 1px solid black;
+    z-index: 999;
+    color: white;
+    user-select: none;
+  }
+  .nav-li:hover{
+    background-color: #3e3e3e;
+    transition-duration: 0.5s;
+    border: 1px solid rgb(92, 91, 91);
+    cursor: pointer;
+  }
+
+  .nav-li:active {
+    background-color: #686868;
+    border: 1px solid #6b6b6b;
+    transition-duration: 0.1s;
+    border-radius: 20px;
+  }
+
+  .nav-lipromotion{
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    align-self: center;
+    border: 1px solid black;
+    z-index: 999;
+    background-color:rgb(124, 31, 145);
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .nav-lipromotion:hover{
+    background-color:rgb(172, 29, 204);
+    transition-duration: 0.5s;
+    border: 1px solid rgb(239, 15, 235)
+  }
+  
+  .nav-lipromotion:active {
+    background-color:rgb(208, 0, 255);
+    border: 1px solid #bf00ff;
+    transition-duration: 0.1s;
+    border-radius: 20px;
+  }
+
+/*-------------------*\
+
+        BUTTONS
+
+\*-------------------*/
+
+.postbtn {
+    border-radius: 20px;
+    background-color: rgb(11, 146, 237);
+    border: 1px rgb(11, 146, 237);
+    width: 70px;
+    margin-right: auto;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 26px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.postbtn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 139, 231);
+    box-shadow: 0px 2px 6px -3px rgb(11, 146, 237);
+}
+
+.postbtn:active {
+    background-color: rgb(1, 121, 201);
+}
+
+.home {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/*-------------------*\
+
+        POSTS
+
+\*-------------------*/
+.user-media{
+    border-radius: 22px;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.user-media:hover {
+}
+
+.user-media:active {
+    filter: brightness(70%);
+}
+
+.video {
+    border-radius: 22px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px;
+}
+
+.video:hover {
+}
+
+.pfp {
+    border-radius: 50%;
+    border: white 1px solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.pfp:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.pfp:active {
+    filter: brightness(70%);
+}
+
+.text {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.content {
+}
+
+.user1 {
+    display: flex;
+    justify-content: left;
+}
+
+.at{
+    color: gray;
+    margin: 5px;
+    font-weight: thin;
+}
+
+.at:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.at:active {
+    color: rgb(64, 63, 63);
+    text-decoration: underline;
+}
+
+.hashtag {
+    color: rgb(11, 146, 237);
+}
+
+.hashtag:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition-duration: 300ms;
+    background-color: rgba(98, 98, 98, 0.373);
+}
+
+.hashtag:active {
+    color: rgb(0, 101, 168);
+    cursor: pointer;
+}
+
+.gray {
+    color: rgb(94, 94, 94);
+    border-radius: 100%;
+    padding: 6px;
+}
+
+.gray:hover {
+    background-color: rgba(50, 189, 50, 0.575);
+    border: 1px solid rgba(50, 189, 50, 0.575);
+    border-radius: 100%;
+    padding: 6px;
+    transition-duration: 0.2s;
+    color: chartreuse;
+}
+
+.gray:active {
+    background-color: rgba(48, 113, 48, 0.575);
+    border: 1px solid rgba(48, 113, 48, 0.575);
+    color: green;
+}
+
+.username:hover, .username:active {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.username:active {
+color: rgb(198, 198, 198);
+}
+/*-------------------*\
+
+        ICONS
+
+\*-------------------*/
+
+.likeicon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    padding: 5px;
+
+}
+
+.likeicon:hover {
+    color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 13px -3px rgb(100, 10, 10);
+    background-color: rgba(186, 25, 25, 0.671);
+    transition-duration: 0.2s;
+}
+
+
+.likeicon:active {
+    border: 1px solid rgba(208, 15, 15, 0.411);
+    background-color: rgba(213, 53, 53, 0.629);
+    color: rgb(255, 0, 0);
+    box-shadow: 0px 0px 13px -3px rgb(234, 20, 20);
+    animation-name: like-btn;
+    animation-duration: 133ms;
+    animation-timing-function: linear;
+
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+/*-------------------*\
+
+        ANIMATIONS
+
+\*-------------------*/
+
+@keyframes like-btn {
+      100% {
+        transform: scale(200%);
+      }
+}
