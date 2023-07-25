@@ -428,6 +428,8 @@ color: rgb(198, 198, 198);
 
 .material-symbols-outlined {
     color: white;
+    padding: .5em;
+    vertical-align: middle;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
